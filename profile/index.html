@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Profile</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	
+	<link rel="stylesheet" type="text/css" href="css/contact.css" />
 </head>
 <body>
 		<!-- Header with Navigation -->
@@ -196,19 +196,19 @@
 				<div class="content">
 					<h2>Contact</h2>
 					<div>
-						<a href="https://www.facebook.com/jdberrocal1">
+						<a target="_blank" href="https://www.facebook.com/jdberrocal1">
 							<img src="img/facebook.png">
 						</a>
-						<a href="https://www.twitter.com/jdberrocal1">
+						<a target="_blank" href="https://www.twitter.com/jdberrocal1">
 							<img src="img/twitter.png">
 						</a>
-						<a href="https://plus.google.com/103131721885993153424">
+						<a target="_blank" href="https://plus.google.com/103131721885993153424">
 							<img src="img/plus.png">
 						</a>
-						<a href="https://cr.linkedin.com/in/jdberrocal1">
+						<a target="_blank" href="https://cr.linkedin.com/in/jdberrocal1">
 							<img src="img/linkedin.png">
 						</a>
-						<a href="https://github.com/jdberrocal1">
+						<a target="_blank" href="https://github.com/jdberrocal1">
 							<img src="img/github.png">
 						</a>	
 					</div>
@@ -216,17 +216,17 @@
 						<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
 							<div >
 								<label for="name">Your name:</label><br />
-								<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+								<input id="contactName" class="input" name="name" type="text" value="" size="30" /><br />
 							</div>
 							<div >
 								<label for="email">Your email:</label><br />
-								<input id="email" class="input" name="email" type="email" value="" size="30" /><br />
+								<input id="contactEmail" class="input" name="email" type="email" value="" size="30" /><br />
 							</div>
 							<div >
 								<label for="message">Your message:</label><br />
-								<textarea id="message" class="input " name="message" rows="7" cols="30"></textarea><br />
+								<textarea id="contactMessage" class="input " name="message" rows="7" cols="30"></textarea><br />
 							</div>
-							<input id="submit_button" type="submit" value="Send message" />
+							<input id="submitButton" type="submit" value="Send message" onclick="/*sendMail(); return false;*/" class="btn btn-send icon-envelope"/>
 						</form>	
 					</div>
 
@@ -234,5 +234,8 @@
 			</section>
 			<!-- /Contact -->
 		</main>
+
+		<script type="text/javascript" src="scripts/main.js"></script>
+
 </body>
 </html>
