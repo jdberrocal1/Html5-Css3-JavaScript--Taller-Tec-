@@ -1,0 +1,18 @@
+.todoList {
+	position: relative;
+}
+
+.todoItem {
+	position: relative;
+}
+
+.todoItem > label {
+    margin-left: 30px;
+    position: absolute;
+    margin-top: 3px;
+}
+
+.todoItem > input {
+	width: 20px;
+  	height: 20px;
+}
