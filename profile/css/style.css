@@ -9,7 +9,7 @@ html, body {
 }
 body {
 	width: 100%;
-	overflow: hidden;
+	
 	font-weight: 400;
 	font-size: 15px;
 	color: black;
@@ -80,7 +80,7 @@ a {
 	line-height: 24px;
 	color: black;
 	display: inline-block;
-	
+	text-align: justify;
 	padding: 10px;
 	margin: 3px 0px;
 }
@@ -188,3 +188,50 @@ textarea.input{
 .hover:hover + .stuff {
     opacity: 1.0;
 }
+
+@media (max-width: 600px) {
+	#header{
+		width: 100%;
+		top:0; 
+	}
+
+	.content {
+    	right: 5%;
+    	left: 5%;
+    	top: 10%;
+    	position: absolute;
+    	padding-bottom: 30px;
+    }
+
+	nav{
+	  	width: 100%;
+	    height: 35px;
+	    font-size: 16px;
+	    font-weight: bold;
+	    text-align: center;
+	  }
+
+  	#navigation {
+		margin-top: 20px;
+		width: 100%;
+		display:block;
+		list-style:none;
+		z-index:3;
+
+		height: auto;
+	    padding: 0;
+	    margin: 0px;
+	}
+
+	.item{
+		display: inline; 
+	}
+
+	#navigation a {
+		display: inline; 
+		padding: 17px;
+		background-color: transparent;	
+	}
+
+
+  }
