@@ -18,32 +18,12 @@
     transition: all 0.3s;
 }
 
-.btn:before {
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-}
 
-.btn:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
 
 .btn-send {
     background: rgb(0,0,89);
     color: #fff;
     border-radius: 7px;
-    box-shadow: 0 5px rgb(0,0,89);
     padding: 15px 60px 15px 60px;
 }
 
@@ -58,4 +38,5 @@
 
 .btn-send:hover {
     background: rgb(0,70,89);
+
 }

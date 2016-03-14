@@ -27,6 +27,12 @@ function removeOldUI() {
 	}
 }
 
+function checkDone(evt) {
+	var checkbox = evt.target;
+	checkbox.nextElementSibling.className = checkbox.checked===true?'done':'';
+	
+}
+
 function refreshToDoUI() {
 	removeOldUI();
 
@@ -38,6 +44,7 @@ function refreshToDoUI() {
 
 		var todoItemCheckBox = document.createElement('input');
 		todoItemCheckBox.setAttribute('type','checkbox');
+		todoItemCheckBox.addEventListener('click',checkDone)
 
 		var todoItemLabel = document.createElement('label');
 		todoItemLabel.textContent = item;
