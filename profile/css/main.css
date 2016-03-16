@@ -1,15 +1,17 @@
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
 	margin:0;
 	padding:0;
 }
+
 html, body {
 	height:100%;
 	margin:0;
 	padding:0;
 }
+
 body {
 	width: 100%;
-	
+
 	font-weight: 400;
 	font-size: 15px;
 	color: black;
@@ -25,6 +27,7 @@ a {
 	width: 235px;
 	top: 50px;
 }
+
 #header h1 {
 	font-size: 30px;
 	font-weight: 400;
@@ -34,6 +37,7 @@ a {
 	padding: 20px;
 	background: #000;
 }
+
 #navigation {
 	margin-top: 20px;
 	width: 235px;
@@ -41,6 +45,7 @@ a {
 	list-style:none;
 	z-index:3;
 }
+
 #navigation a {
 	color: #444;
 	display: block;
@@ -53,6 +58,7 @@ a {
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 	font-size: 14px;
 }
+
 #navigation a:hover {
 	background: #ddd;
 }
@@ -71,7 +77,7 @@ a {
 	margin-top: 52px;
 	color: #fff;
 	color: black;
-	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+	text-shadow: 0px 3px 3px rgba(0,0,0,0.3);
 }
 
 .content p {
@@ -92,112 +98,33 @@ a {
 	overflow-x: hidden;
 	position: absolute;
 	margin-top: -150%;
-	
+
 	opacity: 0;
 	z-index:2;
+	/*Estos transitions son creados para trabajar en los distintos browser (Chrome-Mozilla-Opera-explorer-Default)*/
 	-webkit-transition: opacity .6s ease-in-out;
 	-moz-transition: opacity .6s ease-in-out;
 	-o-transition: opacity .6s ease-in-out;
 	-ms-transition: opacity .6s ease-in-out;
 	transition: opacity .6s ease-in-out;
 }
+
 .panel:target {
+	/*Define la transparencia de un elemento*/
 	opacity: 1;
 	margin-top: 0%;
-}
-
-.img {
-	background: #d0d0d0;
-    border: 1px solid #b9b9b9;
-    border-radius: 50%;
-    float: left;
-    margin: 0 0 30px 30px;
-    overflow: hidden;
-    padding: 9px;
-    position: relative;
-    transition: all 0.2s ease-in;
-    -webkit-transition: all 0.1s ease-in;
-    -moz-transition: all 0.1s ease-in;
-    -o-transition: all 0.1s ease-in;
-    width: 280px;
-    height: 280px;
-}
-
-.img img {
-	border-radius: 50%;
-    width: 100%;
-    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
-}
-
-.img img:hover {
-	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
-    filter: grayscale(0%);
 }
 
 .row {
 	display: inline-flex;
 }
 
-.circle {
-	background: #000;
-    border-radius: 50%;
-    float: left;
-    margin: 0 0 15px 15px;
-    padding: 9px;
-    width: 70px;
-    height: 70px;
-    display: inline-table;
-    text-align: center;
-}
-
-.circle h1 {
-	display: table-cell;
-	vertical-align: middle;
-	color: #fff;
-	font-size: 15px;
-}
-
-.input{
-	width: 330px;
-    height: 30px;
-    font-size: 15px;
-    padding: 0 5px 0 5px;
-    margin: 5px 0 10px 0;
-    border: 1px solid #000;
-}
-
-textarea.input{
-	height: 100px !important;
-}
-
-
-.stuff {
-    opacity: 0.0;
-    color: rgb(1, 174, 242);
-    font-size: 18px;
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -ms-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
-}
-.hover {
-    
-}
-.hover:hover + .stuff {
-    opacity: 1.0;
-}
-
-.circle .hide {
-	display:none;
-}
-
+/* Todo lo del media query se aplicara cuando el tamaño de la pantalla sea menor a 600px*/
 @media (max-width: 600px) {
-	#header{
+	#header {
 		width: 100%;
-		top:0; 
-		
+		top:0;
+
 	}
 
 	.content {
@@ -208,7 +135,7 @@ textarea.input{
     	padding-bottom: 30px;
     }
 
-	nav{
+	nav {
 	  	width: 100%;
 	    font-size: 16px;
 	    font-weight: bold;
@@ -229,15 +156,14 @@ textarea.input{
 	    margin: 0px;
 	}
 
-	.item{
-		display: inline; 
+	.item {
+		display: inline;
 	}
 
 	#navigation a {
-		display: inline; 
+		display: inline;
 		padding: 17px;
-		background-color: transparent;	
+		background-color: transparent;
 	}
-
 
   }

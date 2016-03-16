@@ -1,0 +1,33 @@
+
+.img {
+	background: #d0d0d0;
+    border: 1px solid #b9b9b9;
+    border-radius: 50%;
+    float: left;
+    margin: 0 0 30px 30px;
+    overflow: hidden;
+    padding: 9px;
+    position: relative;
+    /*Estos transitions son creados para trabajar en los distintos browser (Default-Chrome-Mozilla-Opera)*/
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    width: 280px;
+    height: 280px;
+}
+
+.img img {
+	border-radius: 50%;
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Chrome, puede servir en otros browsers */
+    filter: grayscale(100%);
+}
+
+.img img:hover {
+	-webkit-filter: grayscale(0%); /* Chrome, puede servir en otros browsers */
+}
+
+.row {
+	display: inline-flex;
+}

@@ -1,3 +1,28 @@
-.skillActive {
+.circle {
+	background: #000;
+    border-radius: 50%;
+    float: left;
+    margin: 0 0 15px 15px;
+    padding: 9px;
+    width: 70px;
+    height: 70px;
+    display: inline-table;
+    text-align: center;
+}
+
+
+.circle.skillActive {
 	background: rgb(0,70,89);
+}
+
+.circle .hide {
+    display:none;
+}
+
+.circle label {
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 900;
 }

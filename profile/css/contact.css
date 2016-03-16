@@ -1,3 +1,16 @@
+.input {
+    width: 330px;
+    height: 30px;
+    font-size: 15px;
+    padding: 0 5px 0 5px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #000;
+}
+
+textarea.input {
+    height: 100px !important;
+}
+
 .btn {
     border: none;
     font-family: inherit;
@@ -13,6 +26,7 @@
     font-weight: 700;
     outline: none;
     position: relative;
+    /*Estos transitions son creados para trabajar en los distintos browser (Chrome-Mozilla-Default)*/
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
